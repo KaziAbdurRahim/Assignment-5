@@ -77,9 +77,38 @@ document.getElementById('Qota-donate-btn')
                     // const r = getInnerTextValueByID(TotalCoin);
                     const remainingMoney=r -n;
                     addMoneyToIInnerText( remainingMoney,TotalCoin);
+
+                    // adding the transection
+                    const div = document.createElement(div);
+                    div.classList.add('border-2 p-2 rounded-xl mt-2')
+                    div.innerHTML =`
+                       <p>${n} Taka is Donated for , Bangladesh</p>
+                       <p>time</p>
+                    
+                    `
+                    document.getElementById('transection').appendChild(div);
                 }
 
 
         }      
 
 })
+
+// swithing betwwen donation and transection
+document.getElementById('show-donation').addEventListener('click',function(){
+    showSectionById('place');
+
+})
+document.getElementById('show-transection').addEventListener('click',function(){
+    showSectionById('transection');
+
+})
+
+// button switching
+document.getElementById('show-donation').addEventListener('click', function() {
+    showButtonActive('show-donation');
+});
+
+document.getElementById('show-transection').addEventListener('click', function() {
+    showButtonActive('show-transection');
+});
