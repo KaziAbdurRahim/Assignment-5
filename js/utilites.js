@@ -31,6 +31,12 @@ function showSectionById(id){
     document.getElementById(id).classList.remove('hidden');
 }
 
+function con(){
+    document.getElementById('congrats').classList.remove('hidden');
+
+
+}
+
 function showButtonActive(id) {
     // Reset both buttons to gray
     document.getElementById('show-donation').classList.remove('bg-blue-200');

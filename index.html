@@ -34,7 +34,7 @@
     <!-- Google font -->
 </head>
 
-<body class="font-lexend">
+<body  class="font-lexend">
     <!-- Header started -->
     <header class="bg-slate-100 sticky top-0 z-40 ">
         <!-- navber start -->
@@ -69,13 +69,13 @@
         <div class="flex justify-center gap-2  p-3">
           <button id="show-donation" class="btn bg-blue-200   shadow">Donation</button>
          
-          <button id="show-transection" class="btn bg-gray-200 shadow">History</button>
+          <button id="show-transection" class="btn bg-gray-200   shadow">History</button>
       </div>
     </header>
     <!-- header end -->
 
     <!-- main start -->
-    <main> 
+    <main id="body" class="relative"> 
       <section id="place">
       <!-- card 1 -->
       <div class="mt-2 container mx-auto">
@@ -183,26 +183,45 @@
 
           <!-- History section -->
           <Section id="transection" class="container mx-auto space-y-2 hidden">
-            <div class="border-2 p-2 rounded-xl mt-2">
+            <!-- <div class="border-2 p-2 rounded-xl mt-2">
                 <p>100</p>
                 <p>time</p>
             </div>
             <div class="border-2 p-2 rounded-xl">
                 <p>100</p>
                 <p>time</p>
-            </div>
+            </div> -->
 
 
 
         </Section>
+
     </main>
+
+    <!-- alert -->
+    <div  id="congrats" class="rounded-xl text-center bg-white fixed  space-y-2 p-3  w-[100%]  hidden top-[30%] left-[0%]  shadow-lg  justify-center items-center  rounded-xl" >
+      
+        <div class=" justify-center space-y-2 ">
+          <h3 class="font-bold">Congrats!!</h3>
+          <div ><img src="assets/coin.png" alt="" class=" mx-auto"></div>
+         <P>You Have Donataded for Humankind.</P>
+            <p>Successfully</p>
+          
+        </div>
+        <button id="con-btn" class="btn btn-sm ">Close conformation</button>
+  
+      
+    </div>
     <!-- main end -->
     <!-- footer start -->
     <footer></footer>
     <!-- footer end -->
   <script src="js/utilites.js"></script>
-  <script src="js/working.js"></script>
   <script src="js/transection.js"></script>
+  <script src="js/working.js"></script>
+
+
+ 
 </body>
 
 </html>
