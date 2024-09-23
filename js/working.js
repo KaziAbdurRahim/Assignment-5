@@ -38,10 +38,12 @@ document.getElementById('noakhali-donate-btn')
                 //  congrats massage
                 con();
                 document.getElementById('body').classList.add('blur');
+                document.getElementById('nana').classList.add('blur');
 
                  document.getElementById('con-btn').addEventListener('click',function(){
                     document.getElementById('congrats').classList.add('hidden');
                     document.getElementById('body').classList.remove('blur');
+                    document.getElementById('nana').classList.remove('blur');
 
                  })
             }
@@ -87,10 +89,12 @@ document.getElementById('feni-donate-btn')
                     //  congrats massage
                 con();
                 document.getElementById('body').classList.add('blur');
+                document.getElementById('nana').classList.add('blur');
 
                  document.getElementById('con-btn').addEventListener('click',function(){
                     document.getElementById('congrats').classList.add('hidden');
                     document.getElementById('body').classList.remove('blur');
+                    document.getElementById('nana').classList.remove('blur');
 
                  })
             }
@@ -140,10 +144,12 @@ document.getElementById('Qota-donate-btn')
                    //  congrats massage
                    con();
                    document.getElementById('body').classList.add('blur');
+                   document.getElementById('nana').classList.add('blur');
    
                     document.getElementById('con-btn').addEventListener('click',function(){
                        document.getElementById('congrats').classList.add('hidden');
                        document.getElementById('body').classList.remove('blur');
+                       document.getElementById('nana').classList.remove('blur');
    
                     })
             }
