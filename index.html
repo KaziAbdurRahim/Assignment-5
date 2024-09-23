@@ -22,6 +22,11 @@
                 extend: {
                     colors: {
                         clifford: '#da373d',
+
+                        'button-bg': '#E7C1D3',
+                         'nav-bg-color': '#674188',
+                        'font-color': '#F7EFE5',
+                        'donate-color': '#E2BFD9',
                     },
                     fontFamily:{
                         lexend: [ 'Lexend', 'sans-serif'],
@@ -36,21 +41,22 @@
 
 <body  class="font-lexend">
     <!-- Header started -->
-    <header id="nana" class="bg-slate-100 sticky top-0 z-40 ">
+    <header id="nana" class="bg-gradient-to-r from-slate-400 sticky top-0 z-40 ">
         <!-- navber start -->
         <nav class="container mx-auto">
-          <div class="navbar flex justify-between lg:px-4 ">
+          <div class="navbar flexs flex-col sm:flex-row justify-between lg:px-4 ">
             <div class="">
                 <button id="" class="btn btn-ghost bg-blue-200 shadow " onclick="window.location.href='blog.html';">Blog</button>
             </div>
          <!-- ;ogo part -->
-            <div class="flex items-center justify-between gap-2">
-              <img src="assets/logo.png" alt="" class="">
-              <h1 class="lg:text-xl font-semibold">Donate Bangladesh</h1>
+            <div class="flex items-center gap-2 text-center ">
+              <div class="justify-center items-center "><img src="assets/logo.png" alt="" ></div>
+              <h1 class="lg:text-xl font-semibold ">Donate Bangladesh</h1>
             </div>
          
                <!-- total coin start -->
-                <div class="border-2  rounded-3xl bg-slate-200 shadow ">
+                <div class="">
+                  <div class="border-2 rounded-3xl bg-slate-200 shadow ">
                 
                     <div class="flex items-center justify-between p-2  ">
                       <div class="bg-fixed" > <img src="assets/coin.png" alt="" class="bg-cover"></div>
@@ -60,6 +66,7 @@
                       </div>
                     </div>
 
+                </div>
                 </div>
               <!-- total coin end --> 
           </div>
@@ -106,7 +113,7 @@
               placeholder="Donation amount"
               class="input  w-[100%] " />
             </div>
-            <button id="noakhali-donate-btn" class="border-2  border-red-600 w-[100%] btn">Donate Now</button>
+            <button id="noakhali-donate-btn" class="bg-slate-400 text-white w-[100%] btn">Donate Now</button>
           </div>
         </div>
       </div></div>
@@ -140,7 +147,7 @@
               placeholder="Donation amount"
               class="input  w-[100%] " />
             </div>
-            <button id="feni-donate-btn" class="border-2  border-red-600 w-[100%] btn">Donate Now</button>
+            <button id="feni-donate-btn" class="bg-slate-400 text-white w-[100%] btn">Donate Now</button>
           </div>
         </div>
       </div></div>
@@ -174,7 +181,7 @@
                 placeholder="Donation amount"
                 class="input  w-[100%] " />
               </div>
-              <button id="Qota-donate-btn" class="border-2  border-red-600 w-[100%] btn">Donate Now</button>
+              <button id="Qota-donate-btn" class="bg-slate-400 text-white w-[100%] btn">Donate Now</button>
             </div>
           </div>
         </div></div>
@@ -214,7 +221,13 @@
     </div>
     <!-- main end -->
     <!-- footer start -->
-    <footer></footer>
+    <footer  id="footerr" class=" bottom-0 bg-gradient-to-r from-slate-400 p-4 mt-3">
+      <div class="container text-center">
+        <p>&copy;2024 All right reserved.</p>
+      </div>
+     
+
+    </footer>
     <!-- footer end -->
   <script src="js/utilites.js"></script>
   <script src="js/transection.js"></script>

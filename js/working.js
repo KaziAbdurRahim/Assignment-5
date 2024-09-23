@@ -11,11 +11,16 @@ document.getElementById('noakhali-donate-btn')
         console.log(n);
         if (isNaN(n) || n <= 0) {
             alert('Please enter a valid number');
+              // clear the inpuit
+              document.getElementById('noakhali-donataded-amount').value='';
+              return;
         }
         else {
             const r = getInnerTextValueByID(TotalCoin);
             if (n > r || r === 0) {
                 alert('You do not have sufficient balance.');
+                 // clear the inpuit
+              document.getElementById('noakhali-donataded-amount').value='';
                 return;
             }
             else {
@@ -26,11 +31,13 @@ document.getElementById('noakhali-donate-btn')
                 // const r = getInnerTextValueByID(TotalCoin);
                 const remainingMoney = r - n;
                 addMoneyToIInnerText(remainingMoney, TotalCoin);
+                  // clear the inpuit
+                  document.getElementById('noakhali-donataded-amount').value='';
                   // adding the transection
                   const div = document.createElement('div');
-                  div.classList.add('border-2', 'p-2', 'rounded-xl', 'mt-2');
+                  div.classList.add('border-2', 'p-2', 'rounded-xl', 'mt-2','bg-gradient-to-r',  'from-slate-200');
                  div.innerHTML = `
-                              <p>${n} Taka is Donated for Bangladesh</p>
+                              <p>${n} Taka is Donated for Flood at Noakhali, Bangladesh</p>
                               <p>${addNewdiv()}</p>
                                      `;
                  document.getElementById('transection').appendChild(div);
@@ -39,11 +46,13 @@ document.getElementById('noakhali-donate-btn')
                 con();
                 document.getElementById('body').classList.add('blur');
                 document.getElementById('nana').classList.add('blur');
+                document.getElementById('footerr').classList.add('blur');
 
                  document.getElementById('con-btn').addEventListener('click',function(){
                     document.getElementById('congrats').classList.add('hidden');
                     document.getElementById('body').classList.remove('blur');
                     document.getElementById('nana').classList.remove('blur');
+                    document.getElementById('footerr').classList.remove('blur');
 
                  })
             }
@@ -61,11 +70,16 @@ document.getElementById('feni-donate-btn')
         console.log(n);
         if (isNaN(n) || n <= 0) {
             alert('Please enter a valid number');
+            // clear the inpuit
+            document.getElementById('Feni-donated-amount').value='';
+            return;
         }
         else {
             const r = getInnerTextValueByID(TotalCoin);
             if (n > r || r === 0) {
                 alert('You do not have sufficient balance.');
+                // clear the inpuit
+                document.getElementById('Feni-donated-amount').value='';
                 return;
             }
             else {
@@ -76,12 +90,14 @@ document.getElementById('feni-donate-btn')
                 // const r = getInnerTextValueByID(TotalCoin);
                 const remainingMoney = r - n;
                 addMoneyToIInnerText(remainingMoney, TotalCoin);
+                 // clear the inpuit
+                 document.getElementById('Feni-donated-amount').value='';
 
                   // adding the transection
                   const div = document.createElement('div');
-                  div.classList.add('border-2', 'p-2', 'rounded-xl', 'mt-2');
+                  div.classList.add('border-2', 'p-2', 'rounded-xl', 'mt-2','bg-gradient-to-r',  'from-slate-200');
                  div.innerHTML = `
-                              <p>${n} Taka is Donated for Bangladesh</p>
+                              <p>${n} Taka is Donated for Flood relief in Feni,  Bangladesh</p>
                               <p>${addNewdiv()}</p>
                                      `;
                  document.getElementById('transection').appendChild(div);
@@ -90,11 +106,13 @@ document.getElementById('feni-donate-btn')
                 con();
                 document.getElementById('body').classList.add('blur');
                 document.getElementById('nana').classList.add('blur');
+                document.getElementById('footerr').classList.add('blur');
 
                  document.getElementById('con-btn').addEventListener('click',function(){
                     document.getElementById('congrats').classList.add('hidden');
                     document.getElementById('body').classList.remove('blur');
                     document.getElementById('nana').classList.remove('blur');
+                    document.getElementById('footerr').classList.remove('blur');
 
                  })
             }
@@ -111,11 +129,16 @@ document.getElementById('Qota-donate-btn')
         console.log(n);
         if (isNaN(n) || n <= 0) {
             alert('Please enter a valid number');
+            // clear the inpuit
+            document.getElementById('Qota-donated-amount').value='';
+            return;
         }
         else {
             const r = getInnerTextValueByID(TotalCoin);
             if (n > r || r === 0) {
                 alert('You do not have sufficient balance.');
+                // clear the inpuit
+                document.getElementById('Qota-donated-amount').value='';
                 return;
             }
             else {
@@ -126,12 +149,14 @@ document.getElementById('Qota-donate-btn')
                 // const r = getInnerTextValueByID(TotalCoin);
                 const remainingMoney = r - n;
                 addMoneyToIInnerText(remainingMoney, TotalCoin);
+                // clear the inpuit
+                document.getElementById('Qota-donated-amount').value='';
 
                 // adding the transection
                 const div = document.createElement('div');
-                 div.classList.add('border-2', 'p-2', 'rounded-xl', 'mt-2');
+                 div.classList.add('border-2', 'p-2', 'rounded-xl', 'mt-2','bg-gradient-to-r',  'from-slate-200');
                 div.innerHTML = `
-                             <p>${n} Taka is Donated for Bangladesh</p>
+                             <p>${n} Taka is Donated for Injured in Quata Movment , Bangladesh</p>
                              <p>${addNewdiv()}</p>
                                     `;
                 document.getElementById('transection').appendChild(div);
@@ -145,11 +170,13 @@ document.getElementById('Qota-donate-btn')
                    con();
                    document.getElementById('body').classList.add('blur');
                    document.getElementById('nana').classList.add('blur');
+                   document.getElementById('footerr').classList.add('blur');
    
                     document.getElementById('con-btn').addEventListener('click',function(){
                        document.getElementById('congrats').classList.add('hidden');
                        document.getElementById('body').classList.remove('blur');
                        document.getElementById('nana').classList.remove('blur');
+                       document.getElementById('footerr').classList.remove('blur');
    
                     })
             }
