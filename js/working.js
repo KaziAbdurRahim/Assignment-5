@@ -83,6 +83,16 @@ document.getElementById('feni-donate-btn')
                               <p>${addNewdiv()}</p>
                                      `;
                  document.getElementById('transection').appendChild(div);
+
+                    //  congrats massage
+                con();
+                document.getElementById('body').classList.add('blur');
+
+                 document.getElementById('con-btn').addEventListener('click',function(){
+                    document.getElementById('congrats').classList.add('hidden');
+                    document.getElementById('body').classList.remove('blur');
+
+                 })
             }
 
         }
@@ -126,6 +136,16 @@ document.getElementById('Qota-donate-btn')
                 // div.innerHTML=`<p>${n} Taka is Donated for Bangladesh</p>`;
                 
                 // document.getElementById('transection').appendChild(div)
+
+                   //  congrats massage
+                   con();
+                   document.getElementById('body').classList.add('blur');
+   
+                    document.getElementById('con-btn').addEventListener('click',function(){
+                       document.getElementById('congrats').classList.add('hidden');
+                       document.getElementById('body').classList.remove('blur');
+   
+                    })
             }
 
 
