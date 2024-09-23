@@ -44,6 +44,10 @@ function showButtonActive(id) {
     
     document.getElementById('show-transection').classList.remove('bg-blue-200');
     document.getElementById('show-transection').classList.add('bg-gray-200');
+    if(id ==='show-transection'){
+        document.getElementById('footerr').classList.add('hidden');
+
+    }else{ document.getElementById('footerr').classList.remove('hidden');}
     
     // Set the clicked button to blue
     document.getElementById(id).classList.remove('bg-gray-200');
